@@ -75,6 +75,8 @@ namespace WebAtividadeEntrevista.Controllers
             }
             else
             {
+                if (bo.VerificarExistencia(model.CPF)) return Json("Ja existe o CPF na base");
+
                 bo.Alterar(new Cliente()
                 {
                     Id = model.Id,

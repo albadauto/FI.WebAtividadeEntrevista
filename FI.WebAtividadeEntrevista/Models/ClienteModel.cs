@@ -63,7 +63,7 @@ namespace WebAtividadeEntrevista.Models
         public string Sobrenome { get; set; }
 
         /// <summary>
-        /// Sobrenome
+        /// CPF
         /// </summary>
         [Required]
         public string CPF { get; set; }

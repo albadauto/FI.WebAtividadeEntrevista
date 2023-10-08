@@ -18,7 +18,7 @@
         <div class="col-md-6">
             <div class="form-group">
                 <label for="Nacionalidade">CPF:</label>
-                <input required="required" type="text" class="form-control" id="Cpf" name="Cpf" placeholder="Ex.: 010.011.111-00" maxlength="14" minlength="14" autocomplete="off" onkeyup="MascaraCPF()" onblur="validarCpf(this.value)">
+                <input required="required" type="text" class="form-control" id="Cpf" name="Cpf" placeholder="Ex.: 010.011.111-00" maxlength="14" minlength="14" autocomplete="off" onkeyup="MascaraCPF()" onblur="this.value != '' ? validarCpf(this.value) : null">
             </div>
         </div>
         <div class="col-md-6">

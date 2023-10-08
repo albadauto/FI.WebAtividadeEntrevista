@@ -39,7 +39,7 @@ $(document).ready(function () {
                     ModalDialog("Ocorreu um erro", "Ocorreu um erro interno no servidor.");
             },
             success:
-            function (r) {
+                function (r) {
                 ModalDialog("Sucesso!", r)
                 $("#formCadastro")[0].reset();                                
                 window.location.href = urlRetorno;
